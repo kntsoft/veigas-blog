@@ -132,3 +132,11 @@ STATIC_URL = '/static/'
 # CORS configuration
 # https://github.com/adamchainz/django-cors-headers
 CORS_ALLOW_ALL_ORIGINS = True
+
+# REST FRAMEWORK configuration
+# https://www.django-rest-framework.org/
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
